@@ -1,13 +1,74 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+  <title>2X1 MULTIPLEXER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/main.css"/>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+  <div>
+    <img src="images/Gate.png" class="img-rounded" width="400" height="300">
+  </div>
+
+
+  <div class="table-div">
+    <table id="truth-table">
+      <tbody>
+        <tr>
+          <th> I<sub>0</sub>   I<sub>1</sub>   S </th>
+          <th> SA0 At </th>
+          <th>Expected Output (without faults)</th>
+          <th>Actual Output (with faults) </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="input">
+    <div>
+        I<sub>0</sub>:
+        <select name="a" id="a">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+
+        i<sub>0</sub>:
+        <select name="a1" id="a1">
+          <option value="0">0</option>
+          <option value="1">None</option>
+        </select>
+        I<sub>1</sub>:
+        <select name="b" id="b">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+        i<sub>1</sub>:
+        <select name="b1" id="b1">
+          <option value="0">0</option>
+          <option value="1">None</option>
+        </select>
+        S:
+        <select name="c" id="c">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+        s:
+        <select name="c1" id="c1">
+          <option value="0">0</option>
+          <option value="1">None</option>
+        </select>
+      </div>
+
+      <div>
+          <button onclick="myFunction()">Check</button>
+          <button onclick="reset()">Reset</button>
+      </div>
+  </div>
 </body>
 </html>
