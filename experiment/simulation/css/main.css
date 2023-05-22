@@ -36,6 +36,12 @@ th,td{
   display:flex;
   flex-direction: column;
   gap:4rem;
+  margin-top:0.5rem;
+}
+
+.input-select{
+  display:flex;
+  gap:2rem;
 }
 
 .input div:nth-child(2)
