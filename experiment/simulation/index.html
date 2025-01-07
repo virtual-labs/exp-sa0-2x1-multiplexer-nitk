@@ -1,85 +1,146 @@
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE</title>
 
-<head>
-  <title>2X1 MULTIPLEXER</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/main.css"/>
-  <script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
-
-  <div>
-    <img src="images/Gate.png" class="img-rounded" width="400" height="300">
-  </div>
-
-
-  <div class="table-div">
-    <table id="truth-table">
-      <tbody>
-        <tr>
-          <th> I<sub>0</sub>   I<sub>1</sub>   S </th>
-          <th> SA0 At </th>
-          <th>Expected Output (without faults)</th>
-          <th>Actual Output (with faults) </th>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="input">
-    <div class="input-select">
-      <span>
-        I<sub>0</sub>:
-        <select name="a" id="a">
-          <option value="0">0</option>
-          <option value="1">1</option>
-        </select>
-      </span>
-      <span>
-        i<sub>0</sub>:
-        <select name="a1" id="a1">
-          <option value="0">0</option>
-          <option value="1">None</option>
-        </select>
-        </span>
-        <span>
-        I<sub>1</sub>:
-        <select name="b" id="b">
-          <option value="0">0</option>
-          <option value="1">1</option>
-        </select>
-        </span>
-        <span>
-        i<sub>1</sub>:
-        <select name="b1" id="b1">
-          <option value="0">0</option>
-          <option value="1">None</option>
-        </select>
-        </span>
-        <span>
-          S:
-        <select name="c" id="c">
-          <option value="0">0</option>
-          <option value="1">1</option>
-        </select>
-      </span>
-      <span>
-        s:
-        <select name="c1" id="c1">
-          <option value="0">0</option>
-          <option value="1">None</option>
-          </span>
-        </select>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+  </head>
+  <body>
+    <div class="container">
+    <div class="title-div-container">
+      <div class="title-div">
+        <div class="logo-div">
+          <a href="#"
+            ><img src="images/logo_nitk.png" alt="Logo" class="logo"
+          /></a>
+        </div>
+        <h1>Detection of SA0 faults on a VLSI circuit for 2x1 multiplexer (mux)</h1>
       </div>
+    </div>
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list tool-practice">
+            <a class="tool-link" title="Simulation"
+              ><img src="./images/solution.png" alt="solution" class="icons"
+            /></a>
+            <span>Simulation</span>
+          </li>
 
-      <div>
-          <button onclick="myFunction()">Check</button>
-          <button onclick="reset()">Reset</button>
+          <li class="tool-list tool-help" onclick="reset()">
+            <a class="tool-link" title="Refresh">
+              <img src="./images/bluecwdull.svg" class="icons" />
+            </a>
+            <span>Refresh</span>
+          </li>
+        </ul>
       </div>
-  </div>
-</body>
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">Simulation</h3>
+            <div class="canvas__div">
+              <div class="task-screen apparatus hide"></div>
+              <div class="task-screen practice">
+                <div class="wrapper">
+                  <div class="grid-container">
+                    <!-- Left Section -->
+                    <div class="div1">
+                      <div class="image-container">
+                        <img
+                          src="images/new.png"
+                          class="img-rounded"
+                          alt="MUX Diagram"
+                        />
+                      </div>
+                    </div>
+                  
+                    <!-- Right Section -->
+                    <div class="settings-sections">
+                      <div class="input-grid">
+                        <div class="input-cell">
+                          <label for="a">I<sub>0</sub>:</label>
+                          <select name="a" id="a">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                          </select>
+                        </div>
+                        <div class="input-cell">
+                          <label for="a1">i<sub>0</sub>:</label>
+                          <select name="a1" id="a1">
+                            <option value="0">0</option>
+                            <option value="1">None</option>
+                          </select>
+                        </div>
+                        <div class="input-cell">
+                          <label for="b">I<sub>1</sub>:</label>
+                          <select name="b" id="b">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                          </select>
+                        </div>
+                        <div class="input-cell">
+                          <label for="b1">i<sub>1</sub>:</label>
+                          <select name="b1" id="b1">
+                            <option value="0">0</option>
+                            <option value="1">None</option>
+                          </select>
+                        </div>
+                        <div class="input-cell">
+                          <label for="c">S:</label>
+                          <select name="c" id="c">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                          </select>
+                        </div>
+                        <div class="input-cell">
+                          <label for="c1">s:</label>
+                          <select name="c1" id="c1">
+                            <option value="0">0</option>
+                            <option value="1">None</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="buttons" onclick="myFunction()">Check</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="simulator-table container1">
+                  <div class="table-div">
+                    <table id="truth-table">
+                      <tbody>
+                        <tr>
+                          <th>I<sub>0</sub> I<sub>1</sub> S</th>
+                          <th>SA0 At</th>
+                          <th>Expected Output (without faults)</th>
+                          <th>Actual Output (with faults)</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div id="variables" class="main__task-div">
+            <h3 class="task-title">Controls</h3>
+           
+          </div> -->
+        </div>
+
+        <div class="main__task-div footer">
+          <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+        </div>
+      </div>
+    </div>
+    <script defer src="js/script.js"></script>
+  </body>
 </html>
