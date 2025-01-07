@@ -16,26 +16,19 @@ function myFunction() {
   var r = z * z1;
   if (x1 == 0 && y1 == 0 && z1 == 0) {
     text = "I<sub>0</sub> I<sub>1</sub> S";
-  }
-  else if (x1 == 0 && y1 == 0) {
+  } else if (x1 == 0 && y1 == 0) {
     text = "I<sub>0</sub> I<sub>1</sub>";
-  }
-  else if (y1 == 0 && z1 == 0) {
+  } else if (y1 == 0 && z1 == 0) {
     text = "I<sub>1</sub> S";
-  }
-  else if (x1 == 0 && z1 == 0) {
+  } else if (x1 == 0 && z1 == 0) {
     text = "I<sub>0</sub> S";
-  }
-  else if (x1 == 0) {
+  } else if (x1 == 0) {
     text = "I<sub>0</sub>";
-  }
-  else if (y1 == 0) {
+  } else if (y1 == 0) {
     text = "I<sub>1</sub>";
-  }
-  else if (z1 == 0) {
+  } else if (z1 == 0) {
     text = "S";
-  }
-  else {
+  } else {
     text = "NIL";
   }
 
