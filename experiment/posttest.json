@@ -11,7 +11,7 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": " If there are 2^n input lines, then n select lines are needed to uniquely address each input line in a multiplexer.",
         "c": "",
         "d": ""
       },
@@ -27,7 +27,7 @@
         "d": "Demultiplexer"
       },
       "explanations": {
-        "a": "",
+        "a": "A multiplexer can act as a parallel to series converter by selecting and transmitting multiple parallel inputs one at a time over a single output line.",
         "b": "",
         "c": "",
         "d": ""
@@ -39,17 +39,17 @@
       "question": "In a multiplexer, the output depends on its _____________ .",
       "answers": {
         "a": "Data inputs",
-        "b": "Select inputs",
+        "b": "Enable pin",
         "c": "Select outputs",
-        "d": "Enable pin"
+        "d": "Select inputs"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
+        "d": "In a multiplexer, the output is determined by the select inputs, which choose which data input is routed to the output."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "intermediate"
     },
     {
@@ -61,9 +61,7 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "b": "Stuck-at fault testing involves applying specific test vectors to detect faults, not relying solely on the actual input and output values at a terminal. The fault is assumed to be permanently stuck at a logic level, and test patterns are designed to reveal discrepancies in circuit behavior."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
@@ -77,12 +75,12 @@
         "d": "Both a and c"
       },
       "explanations": {
-        "a": "",
+        "a": " Multiplexers are commonly referred to as data selectors because they select one of several input signals and forward it to a single output line based on select inputs.",
         "b": "",
         "c": "",
         "d": ""
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "advanced"
     }
   ]
