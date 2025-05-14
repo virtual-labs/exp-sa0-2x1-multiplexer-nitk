@@ -12,7 +12,7 @@
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
+        "c": "A 'stuck at fault' means a signal is permanently stuck at a constant logic value, either 0 or 1, regardless of the input conditions.",
         "d": ""
       },
       "correctAnswer": "c",
@@ -28,7 +28,7 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": "In a multiplexer, the selected line (or select inputs) determines which one of the multiple input lines is routed to the output.",
         "c": "",
         "d": ""
       },
@@ -46,7 +46,7 @@
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
+        "c": "A multiplexer is a combinational logic circuit that selects one of several input lines and forwards it to a single output line based on select inputs.",
         "d": ""
       },
       "correctAnswer": "c",
@@ -61,7 +61,7 @@
         "d": "A 4*1 multiplexer has 4 output lines, 1 selection line and 4 input lines."
       },
       "explanations": {
-        "a": "",
+        "a": "The notation "4*1" in a multiplexer means it selects 1 output from 4 input lines, using selection lines to choose which input to pass through.",
         "b": "",
         "c": "",
         "d": ""
@@ -81,7 +81,7 @@
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
+        "d": "A multiplexer is a combinational circuit that selects one input from many and forwards it to the output based on select lines."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
