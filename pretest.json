@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The signal is said to be 'stuck at fault' when it is stuck at logic  _____________ .",
+      "answers": {
+        "a": "0",
+        "b": "1",
+        "c": "0 or 1",
+        "d": "0 and 1"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "A 'stuck at fault' means a signal is permanently stuck at a constant logic value, either 0 or 1, regardless of the input conditions.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a multiplexer, the selection of a particular input line is controlled by  _____________ .",
+      "answers": {
+        "a": "Data controller",
+        "b": "Selected line",
+        "c": "Logic gates",
+        "d": "Both data controller and selected lines"
+      },
+      "explanations": {
+        "a": "",
+        "b": "In a multiplexer, the selected line (or select inputs) determines which one of the multiple input lines is routed to the output.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is a combinational logic circuit designed to switch one of several input lines to a single common out put line?",
+      "answers": {
+        "a": "Flip-Flop",
+        "b": "Full adder",
+        "c": "Multiplexer",
+        "d": "Demultiplexer"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "A multiplexer is a combinational logic circuit that selects one of several input lines and forwards it to a single output line based on select inputs.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which of the following statement is correct?",
+      "answers": {
+        "a": "A 4*1 multiplexer has 4 input lines and 1 output line.",
+        "b": "A 4*1 multiplexer has 4 output lines, 2selection lines and 1 input line.",
+        "c": "A 4*1 multiplexer has 4 selection lines, 1 output line and 1 input line.",
+        "d": "A 4*1 multiplexer has 4 output lines, 1 selection line and 4 input lines."
+      },
+      "explanations": {
+        "a": "The notation '4*1' in a multiplexer means it selects 1 output from 4 input lines, using selection lines to choose which input to pass through.",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A combinational circuit that selects one from many inputs is _____________ .",
+      "answers": {
+        "a": "Encoder",
+        "b": "Decoder",
+        "c": "Demultiplexer",
+        "d": "Multiplexer"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "A multiplexer is a combinational circuit that selects one input from many and forwards it to the output based on select lines."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}
