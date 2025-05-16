@@ -61,7 +61,7 @@
         "d": "A 4*1 multiplexer has 4 output lines, 1 selection line and 4 input lines."
       },
       "explanations": {
-        "a": "The notation "4*1" in a multiplexer means it selects 1 output from 4 input lines, using selection lines to choose which input to pass through.",
+        "a": "The notation '4*1' in a multiplexer means it selects 1 output from 4 input lines, using selection lines to choose which input to pass through.",
         "b": "",
         "c": "",
         "d": ""
