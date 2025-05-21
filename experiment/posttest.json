@@ -2,38 +2,86 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "If the number of n selected input lines is equal to 2^n then it requires  _____________  select lines.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "2",
+        "b": "n",
+        "c": "2^n",
+        "d": "2*n"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": " If there are 2^n input lines, then n select lines are needed to uniquely address each input line in a multiplexer.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following can be used as a parallel to series converter?",
+      "answers": {
+        "a": "Multiplexer",
+        "b": "Decoder",
+        "c": "Digital counter",
+        "d": "Demultiplexer"
+      },
+      "explanations": {
+        "a": "A multiplexer can act as a parallel to series converter by selecting and transmitting multiple parallel inputs one at a time over a single output line.",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In a multiplexer, the output depends on its _____________ .",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Data inputs",
+        "b": "Enable pin",
+        "c": "Select outputs",
+        "d": "Select inputs"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "In a multiplexer, the output is determined by the select inputs, which choose which data input is routed to the output."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Stuck at fault relies on input and output values at that terminal.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+
+      },
+      "explanations": {
+        "a": "",
+        "b": "Stuck-at fault testing involves applying specific test vectors to detect faults, not relying solely on the actual input and output values at a terminal. The fault is assumed to be permanently stuck at a logic level, and test patterns are designed to reveal discrepancies in circuit behavior."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Multiplexers are also referred to as  _____________ .",
+      "answers": {
+        "a": "Data selectors",
+        "b": "Multivibrators",
+        "c": "Universal circuit builders",
+        "d": "Both a and c"
+      },
+      "explanations": {
+        "a": " Multiplexers are commonly referred to as data selectors because they select one of several input signals and forward it to a single output line based on select inputs.",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
